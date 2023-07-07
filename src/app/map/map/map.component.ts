@@ -21,6 +21,7 @@ import { IMap } from '../interface/map.interface';
 })
 export class MapComponent implements OnInit, AfterViewInit, IMap {
   @ViewChild('mapDiv', { static: true }) mapDiv!: ElementRef;
+  @ViewChild('alertError', { static: true }) alertError!: ElementRef;
 
   private toggle: boolean = true;
 
@@ -46,6 +47,10 @@ export class MapComponent implements OnInit, AfterViewInit, IMap {
   public getLocation(): void {
     this.locationService.getLocation().subscribe({
       next: (data: Paradero[]) => {
+        if (data && data.length <= 0) {
+          return this.removeClassAlert();
+        }
+
         this.locations = data;
         this.loadMarkers(this.locations.features);
       },
@@ -116,6 +121,20 @@ export class MapComponent implements OnInit, AfterViewInit, IMap {
     for (const element of markers) {
       element.style.visibility = visibility;
     }
+  }
+
+  /**
+   * close modal
+   */
+  public closeModal() {
+    this.alertError.nativeElement.style.display = 'none';
+  }
+
+  /**
+   * remove class for hide alert
+   */
+  public removeClassAlert(): void {
+    this.alertError.nativeElement.classList.remove('hide-alert');
   }
 
   get mapKey() {

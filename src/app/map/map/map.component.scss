@@ -24,3 +24,14 @@
     cursor: pointer;
   }
 }
+.hide-alert {
+  display: none;
+}
+
+.alert-no-data {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
