@@ -1,0 +1,10 @@
+<div class="sidebar">
+  <ul class="list-group list-group-flush">
+    <li
+      *ngFor="let item of arraySidebar"
+      class="list-group-item list-group-item-action bg-transparent"
+    >
+      <img [src]="item.pathImage" [alt]="item.tooltip" [title]="item.tooltip" />
+    </li>
+  </ul>
+</div>

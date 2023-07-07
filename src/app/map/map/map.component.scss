@@ -1,0 +1,26 @@
+.div-marker {
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+  min-height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: var(--primary-color);
+  &__div--layers {
+    background-image: url("/assets/images/sidebar/layers.svg");
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  &__div--toggle {
+    background-image: url("/assets/images/bus-stop.svg");
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+}

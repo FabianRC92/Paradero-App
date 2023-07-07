@@ -1,0 +1,91 @@
+<nav class="navbar-header text-white">
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-lg-5 d-flex align-items-center">
+        <img
+          src="assets/images/navbar/logo.png"
+          alt="logo"
+          width="300"
+          height="50"
+        />
+      </div>
+      <div class="col-lg-3 d-flex justify-content-between align-items-center">
+        <div
+          class="d-flex align-items-center"
+          title="Velocidad promedio ponderada de los últimos 5 minutos"
+        >
+          <img
+            src="assets/images/navbar/tachometer.svg"
+            alt="tachometer"
+            class="images"
+          />
+          30
+        </div>
+        <div
+          class="d-flex align-items-center"
+          title="Número de incidentes en estado abierto"
+        >
+          <img
+            src="assets/images/navbar/alert.svg"
+            alt="alert"
+            class="images"
+          />
+          119
+        </div>
+        <div
+          class="d-flex align-items-center"
+          title="Conteo total de vehículos de los últimos 5 minutos"
+        >
+          <img src="assets/images/navbar/car.svg" alt="car" class="images" />
+          3295
+        </div>
+        <div
+          class="d-flex align-items-center"
+          title="Cantidad de agentes conectados en los últimos 5 minutos"
+        >
+          <img
+            src="assets/images/navbar/police.svg"
+            alt="police"
+            class="images"
+          />
+          22
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex justify-content-between align-items-center">
+        <div class="d-flex flex-column">
+          <span>
+            {{ currentDate | date : "dd/MM/yyyy" }}
+          </span>
+
+          <span>
+            {{ currentDate | date : "HH:mm" }}
+          </span>
+        </div>
+        <div class="d-flex justify-content-between">
+          <img
+            src="assets/images/navbar/info.svg"
+            alt="info"
+            class="images"
+            title="Información adicional"
+          />
+          <img
+            src="assets/images/navbar/notes.svg"
+            alt="notes"
+            class="images"
+            title="Reportes"
+          />
+          <img
+            src="assets/images/navbar/gear.svg"
+            alt="gear"
+            class="images"
+            title="Configuración"
+          />
+        </div>
+        <div class="d-flex justify-content-between">
+          user
+          <img src="assets/images/navbar/user.svg" alt="user" class="images" />
+        </div>
+      </div>
+    </div>
+  </section>
+</nav>

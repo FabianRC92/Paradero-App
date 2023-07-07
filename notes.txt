@@ -1,0 +1,64 @@
+ // const first=features[0]
+    // console.log(first);
+    // for (const feature of features) {
+    //   // create a HTML element for each feature
+    //   const el = document.createElement('div');
+    //   if(feature.properties.UBICACION==='AV CENTENARIO CRA 33'){
+    //     console.log(feature);
+    //   }
+    //   el.className = 'marker';
+    //     el.addEventListener('click', () => {
+    //       window.alert(feature.properties.UBICACION);
+    //     });
+    //   // make a marker for each feature and add to the map
+    //   new Mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
+    // }
+    // for (const marker of features) {
+    //   // Create a DOM element for each marker.
+    //   if (marker.properties) {
+    //     const el = document.createElement('div');
+    //     el.className = 'marker';
+    //     el.style.backgroundImage = `url(/assets/images/map-bus-stop.svg)`;
+    //     el.style.width = `25px`;
+    //     el.style.height = `25px`;
+    //     el.style.backgroundSize = '100%';
+    //     el.addEventListener('click', () => {
+    //       window.alert(marker.properties.UBICACION);
+    //     });
+    //     // Add markers to the map.
+    //     new Mapboxgl.Marker(el)
+    //       .setLngLat(marker.geometry.coordinates)
+    //       .addTo(this.map);
+    //   }
+    // }
+    // this.map.on('load', () => {
+    //   this.map.loadImage(
+    //     'https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png',
+    //     (error, image) => {
+    //       if (error) throw error;
+    //       this.map.addImage('custom-marker', image!);
+    //       // Add a GeoJSON source with 2 points
+    //       this.map.addSource('points', {
+    //         type: 'geojson',
+    //         data: {
+    //           type: 'FeatureCollection',
+    //           features: features,
+    //         },
+    //       });
+    //       // Add a symbol layer
+    //       this.map.addLayer({
+    //         id: 'points',
+    //         type: 'symbol',
+    //         source: 'points',
+    //         layout: {
+    //           'icon-image': 'custom-marker',
+    //           // get the title name from the source's "title" property
+    //           'text-field': ['get', 'title'],
+    //           'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
+    //           'text-offset': [0, 1.25],
+    //           'text-anchor': 'top',
+    //         },
+    //       });
+    //     }
+    //   );
+    // });

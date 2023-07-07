@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+@import "node_modules/bootstrap/scss/bootstrap";
+
+:root {
+  --primary-color: #00373b;
+  --secondary-color: #011112;
+  --color-modal-title: #bcf403;
+  --color-modal-content: #d4d8d9;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.map-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.marker {
+  background-image: url("/assets/images/map-bus-stop.svg");
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dark-modal .modal-content {
+  background-color: var(--secondary-color);
+  color: var(--color-modal-content);
+  .modal-title {
+    color: var(--color-modal-title);
+  }
+}
+::ng-deep ngb-tooltip-window{ opacity:1!important; }

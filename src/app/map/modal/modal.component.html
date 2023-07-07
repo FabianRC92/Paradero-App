@@ -1,0 +1,46 @@
+<div class="modal-header">
+  <div class="d-flex align-items-center">
+    <img src="assets/images/map-bus-stop.svg" alt="map-bus-stop" class="me-4" />
+
+    <h4 class="modal-title me-4">ID: {{ paradero.ID }}</h4>
+
+    <h4 class="modal-title">{{ paradero.UBICACION || "SIN DESCRIPCIÓN" }}</h4>
+  </div>
+  <button
+    type="button"
+    class="btn-close btn-close-white"
+    aria-label="Close"
+    (click)="activeModal.dismiss('Cross click')"
+  ></button>
+</div>
+<div class="modal-body">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="modal-container-row">
+        TIPO DE PARADERO
+
+        <img src="assets/images/bus-stop-type.svg" alt="bus-stop-type" />
+
+        {{ paradero.TIPO }}
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="modal-container-row">
+        NO. DE RUTAS
+
+        <img src="assets/images/bus-route.svg" alt="bus-route" />
+
+        {{ paradero.N_RUTAS }}
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="modal-container-row">
+        ADMINISTRADOR
+
+        <img src="assets/images/admin.svg" alt="admin" />
+
+        {{ paradero.ADMINISTRA }}
+      </div>
+    </div>
+  </div>
+</div>

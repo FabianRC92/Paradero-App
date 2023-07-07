@@ -1,0 +1,15 @@
+.sidebar {
+  background-color: var(--secondary-color);
+  color: #717f70;
+  position: fixed;
+  top: 10%;
+  bottom: 0px;
+  left: 0px;
+  width: 50px;
+  z-index: 2;
+  img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+}
