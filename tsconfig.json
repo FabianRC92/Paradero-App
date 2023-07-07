@@ -26,7 +26,8 @@
       "dom.iterable"
     ],
     "types": [
-      "node"
+      "node",
+      "jasmine"
     ]
   },
   "angularCompilerOptions": {

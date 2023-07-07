@@ -11,9 +11,9 @@ import { Observable, map, catchError, throwError, of } from 'rxjs';
   providedIn: 'root',
 })
 export class LocationService {
-  private readonly API = environment.urlAPI;
-  private readonly mapKey = environment.mapboxAPIKey;
-  private readonly coordinatesMap = environment.coordinatesMap;
+  public readonly API = environment.urlAPI;
+  public readonly mapKey = environment.mapboxAPIKey;
+  public readonly coordinatesMap = environment.coordinatesMap;
 
   constructor(private http: HttpClient) {}
 
